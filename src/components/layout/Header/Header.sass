@@ -1,0 +1,113 @@
+
+.header 
+    padding: 0 !important
+    box-shadow: #7a7a7a
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 72px !important
+    z-index: 9
+    align-items: center
+    border-bottom: none
+    background-color: #fff !important
+
+    &.fixed 
+        position: fixed
+        top: 0
+        right: 0
+        width: 100%
+        z-index: 900
+        border-bottom: none
+        transition: width 0.2s
+
+        &.collapsed 
+            width: 100%
+    :global 
+        .ant-menu-submenu-title 
+            border-bottom: none
+    
+    .ant-menu-horizontal 
+        line-height: 72px
+        border-bottom: none !important 
+
+        & > .ant-menu-submenu:hover 
+            background-color: #ffffff
+        
+    .ant-menu 
+      border-bottom: none
+      height: 72px
+    
+
+    .ant-menu-horizontal > .ant-menu-submenu 
+      top: 0
+      margin-top: 0
+    
+
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu 
+      margin-right: 10px
+      border-bottom: none
+      svg
+            font-size: 22px
+            
+    
+
+    .ant-menu-horizontal > .ant-menu-item-active,
+    .ant-menu-horizontal > .ant-menu-item-open,
+    .ant-menu-horizontal > .ant-menu-item-selected,
+    .ant-menu-horizontal > .ant-menu-item:hover,
+    .ant-menu-horizontal > .ant-menu-submenu-active,
+    .ant-menu-horizontal > .ant-menu-submenu-open,
+    .ant-menu-horizontal > .ant-menu-submenu-selected,
+    .ant-menu-horizontal > .ant-menu-submenu:hover 
+        border-bottom: none
+    
+  
+    .leftContainer 
+        display: flex
+        align-items: center
+
+    .rightContainer 
+        display: flex
+        align-items: center
+        border-bottom: none
+
+    
+
+    .button 
+        width: 72px
+        height: 72px
+        line-height: 72px
+        text-align: center
+        font-size: 18px
+        cursor: pointer
+        border-bottom: none
+        &:hover 
+            color: #4260c2
+.iconButton 
+    width: 48px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 24px
+    border-bottom: none
+    cursor: pointer
+
+    &:hover 
+        .iconFont 
+        color: #7a7a7a
+        
+  
+
+    & + .iconButton 
+        margin-left: 8px
+    
+    .iconFont 
+        color: #b2b0c7
+        font-size: 24px
+@media (max-width: 767px) 
+  .header 
+    width: 100% !important
+  
+
